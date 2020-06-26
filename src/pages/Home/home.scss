@@ -1,0 +1,33 @@
+@import "../../styles/global.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  &--title {
+    color: $main;
+    font-size: 2.6vw;
+    margin-top: 2.5%;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke-width: 0.02vw;
+    -webkit-text-stroke-color: black;
+    font-family: "Nunito Sans", sans-serif;
+    text-shadow: 2px 2px 6px rgba(150, 150, 150, 0.86);
+  }
+  &--paragraph {
+    width: 30vw;
+    margin-top: 3%;
+    font-size: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  &--btn {
+    width: 5vw;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

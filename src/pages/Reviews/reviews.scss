@@ -1,0 +1,58 @@
+@import "../../styles/global.scss";
+.reviews {
+  &--title {
+    margin-top: 4%;
+    font-size: 1.8vw;
+    text-align: center;
+    color: rgba(98, 98, 98, 0.945);
+    font-family: "Spartan", sans-serif;
+  }
+  &--container {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+    min-height: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    &--card {
+      width: 570px;
+      height: 560px;
+      display: flex;
+      flex-direction: column;
+      &--pic {
+        width: 553px;
+        height: 284px;
+      }
+      &--paragraph {
+        width: 90%;
+        margin-top: 3%;
+        font-size: 1vw;
+        color: #313131;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: normal;
+        font-family: "Nunito Sans", sans-serif;
+      }
+      &--footer {
+        width: 60%;
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+        &--name {
+          color: $main;
+          font-size: 1.3vw;
+          margin-bottom: -2%;
+          font-family: "Nunito Sans", sans-serif;
+        }
+        &--place {
+          font-size: 0.8vw;
+          color: #313131;
+        }
+      }
+    }
+  }
+}
