@@ -1,0 +1,24 @@
+{
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/proposal-object-rest-spread",
+      [
+        "module-resolver",
+        {
+          "root": ["./"],
+          "alias": {
+            "@utils": "./src/utils",
+            "@pages": "./src/pages",
+            "@redux": "./src/redux",
+            "@assets": "./src/assets",
+            "@styles": "./src/styles",
+            "@route": "./src/route",
+            "@components": "./src/components"
+          }
+        }
+      ]
+    ]
+  }
