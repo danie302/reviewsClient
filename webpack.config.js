@@ -85,7 +85,9 @@ module.exports = {
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[id].css" : "[id].[hash].css",
     }),
-    new Dotenv(),
+    new Dotenv({
+      safe: "./.env.example",
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, "/dist"),
